@@ -14,5 +14,6 @@ install(FILES
     deframer_bb.h
     fich_sink_b.h
     dch_sink_b.h
+    pager_slicer_fb.h
     vd2_vch_decoder_bb.h
     mbelib_block_bf.h DESTINATION include/gnuradio/ysf)

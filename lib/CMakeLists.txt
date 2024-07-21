@@ -17,6 +17,7 @@ list(APPEND ysf_sources
     fich_sink_b_impl.cc
     dch_sink_b_impl.cc
     demux_planner.cc
+    pager_slicer_fb_impl.cc
     vd2_vch_decoder_bb_impl.cc
     mbelib_block_bf_impl.cc
     fr_vch_decoder_bb_impl.cc)

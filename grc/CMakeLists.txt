@@ -12,5 +12,6 @@ install(FILES
     ysf_dch_sink_b.block.yml
     ysf_vd2_vch_decoder_bb.block.yml
     ysf_mbelib_block_bf.block.yml
+    ysf_pager_slicer_fb.block.yml
     ysf_fr_vch_decoder_bb.block.yml DESTINATION share/gnuradio/grc/blocks
 )
