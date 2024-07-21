@@ -30,11 +30,15 @@ if(NOT ysf_sources)
 endif(NOT ysf_sources)
 
 add_library(gnuradio-ysf SHARED ${ysf_sources})
-target_link_libraries(gnuradio-ysf gnuradio::gnuradio-runtime)
+find_package(PkgConfig REQUIRED)
+pkg_search_module(MBELIB REQUIRED libmbe mbelib libMBE)
+target_link_libraries(gnuradio-ysf gnuradio::gnuradio-runtime ${MBELIB_LINK_LIBRARIES})
 target_include_directories(
     gnuradio-ysf
     PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/../include>
-    PUBLIC $<INSTALL_INTERFACE:include>)
+    PUBLIC $<INSTALL_INTERFACE:include>
+    PRIVATE ${MBELIB_INCLUDE_DIRS})
+target_compile_options(gnuradio-ysf PRIVATE ${MBELIB_CFLAGS_OTHER})
 set_target_properties(gnuradio-ysf PROPERTIES DEFINE_SYMBOL "gnuradio_ysf_EXPORTS")
 
 if(APPLE)
