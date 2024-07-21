@@ -6,4 +6,11 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 #
 
-install(FILES DESTINATION share/gnuradio/grc/blocks)
+install(FILES
+    ysf_deframer_bb.block.yml
+    ysf_fich_sink_b.block.yml
+    ysf_dch_sink_b.block.yml
+    ysf_vd2_vch_decoder_bb.block.yml
+    ysf_mbelib_block_bf.block.yml
+    ysf_fr_vch_decoder_bb.block.yml DESTINATION share/gnuradio/grc/blocks
+)

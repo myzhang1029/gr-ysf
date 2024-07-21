@@ -11,7 +11,15 @@
 ########################################################################
 include(GrPlatform) #define LIB_SUFFIX
 
-list(APPEND ysf_sources)
+list(APPEND ysf_sources
+    deframer_bb_impl.cc
+    fich_packet.cc
+    fich_sink_b_impl.cc
+    dch_sink_b_impl.cc
+    demux_planner.cc
+    vd2_vch_decoder_bb_impl.cc
+    mbelib_block_bf_impl.cc
+    fr_vch_decoder_bb_impl.cc)
 
 set(ysf_sources
     "${ysf_sources}"
