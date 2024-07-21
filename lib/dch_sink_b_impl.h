@@ -21,7 +21,7 @@
 #ifndef INCLUDED_YSF_DCH_SINK_C_IMPL_H
 #define INCLUDED_YSF_DCH_SINK_C_IMPL_H
 
-#include <ysf/dch_sink_b.h>
+#include <gnuradio/ysf/dch_sink_b.h>
 #include <vector>
 #include "demux_planner.h"
 

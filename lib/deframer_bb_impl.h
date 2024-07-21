@@ -21,7 +21,7 @@
 #ifndef INCLUDED_YSF_ALIGNER_BB_IMPL_H
 #define INCLUDED_YSF_ALIGNER_BB_IMPL_H
 
-#include <ysf/deframer_bb.h>
+#include <gnuradio/ysf/deframer_bb.h>
 
 #include <cstdint>
 #include "demux_planner.h"

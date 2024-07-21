@@ -21,7 +21,7 @@
 #ifndef INCLUDED_YSF_MBELIB_BLOCK_BF_IMPL_H
 #define INCLUDED_YSF_MBELIB_BLOCK_BF_IMPL_H
 
-#include <ysf/mbelib_block_bf.h>
+#include <gnuradio/ysf/mbelib_block_bf.h>
 #include <cstdint>
 
 namespace gr {

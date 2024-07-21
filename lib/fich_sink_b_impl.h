@@ -21,7 +21,7 @@
 #ifndef INCLUDED_YSF_FICH_SINK_C_IMPL_H
 #define INCLUDED_YSF_FICH_SINK_C_IMPL_H
 
-#include <ysf/fich_sink_b.h>
+#include <gnuradio/ysf/fich_sink_b.h>
 #include <cstdint>
 #include "fich_packet.h"
 

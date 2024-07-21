@@ -21,7 +21,7 @@
 #ifndef INCLUDED_YSF_FR_VCH_DECODER_BB_IMPL_H
 #define INCLUDED_YSF_FR_VCH_DECODER_BB_IMPL_H
 
-#include <ysf/fr_vch_decoder_bb.h>
+#include <gnuradio/ysf/fr_vch_decoder_bb.h>
 
 namespace gr {
   namespace ysf {

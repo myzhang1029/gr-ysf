@@ -54,7 +54,7 @@ namespace gr {
         // FIXME: deal with threshold (issue #20)
         
         message_port_register_in(pmt::mp("demux_instruction"));
-        set_msg_handler(pmt::mp("demux_instruction"), boost::bind(&deframer_bb_impl::queue, this, _1));
+        set_msg_handler(pmt::mp("demux_instruction"), [this](pmt::pmt_t msg) { this->queue(msg); });
     }
 
     deframer_bb_impl::~deframer_bb_impl()

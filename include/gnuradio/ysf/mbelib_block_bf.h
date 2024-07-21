@@ -22,7 +22,7 @@
 #ifndef INCLUDED_YSF_MBELIB_BLOCK_BF_H
 #define INCLUDED_YSF_MBELIB_BLOCK_BF_H
 
-#include <ysf/api.h>
+#include <gnuradio/ysf/api.h>
 #include <gnuradio/block.h>
 
 namespace gr {
@@ -36,7 +36,7 @@ namespace gr {
     class YSF_API mbelib_block_bf : virtual public gr::block
     {
      public:
-      typedef boost::shared_ptr<mbelib_block_bf> sptr;
+      typedef std::shared_ptr<mbelib_block_bf> sptr;
 
       /*!
        * \brief Return a shared_ptr to a new instance of ysf::mbelib_block_bf.

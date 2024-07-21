@@ -22,7 +22,7 @@
 #ifndef INCLUDED_YSF_FICH_SINK_C_H
 #define INCLUDED_YSF_FICH_SINK_C_H
 
-#include <ysf/api.h>
+#include <gnuradio/ysf/api.h>
 #include <gnuradio/block.h>
 
 namespace gr {
@@ -36,7 +36,7 @@ namespace gr {
     class YSF_API fich_sink_b : virtual public gr::block
     {
      public:
-      typedef boost::shared_ptr<fich_sink_b> sptr;
+      typedef std::shared_ptr<fich_sink_b> sptr;
 
       /*!
        * \brief Return a shared_ptr to a new instance of ysf::fich_sink_b.

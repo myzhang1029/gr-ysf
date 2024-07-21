@@ -22,7 +22,7 @@
 #ifndef INCLUDED_YSF_VD2_VCH_DECODER_BB_H
 #define INCLUDED_YSF_VD2_VCH_DECODER_BB_H
 
-#include <ysf/api.h>
+#include <gnuradio/ysf/api.h>
 #include <gnuradio/block.h>
 
 namespace gr {
@@ -36,7 +36,7 @@ namespace gr {
     class YSF_API vd2_vch_decoder_bb : virtual public gr::block
     {
      public:
-      typedef boost::shared_ptr<vd2_vch_decoder_bb> sptr;
+      typedef std::shared_ptr<vd2_vch_decoder_bb> sptr;
 
       /*!
        * \brief Return a shared_ptr to a new instance of ysf::vd2_vch_decoder_bb.

@@ -21,7 +21,7 @@
 #ifndef INCLUDED_YSF_VD2_VCH_DECODER_BB_IMPL_H
 #define INCLUDED_YSF_VD2_VCH_DECODER_BB_IMPL_H
 
-#include <ysf/vd2_vch_decoder_bb.h>
+#include <gnuradio/ysf/vd2_vch_decoder_bb.h>
 #include <cstdint>
 
 namespace gr {
