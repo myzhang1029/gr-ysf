@@ -24,7 +24,15 @@ include(GrPybind)
 # Python Bindings
 ########################################################################
 
-list(APPEND ysf_python_files python_bindings.cc)
+list(APPEND ysf_python_files
+    dch_sink_b_python.cc
+    deframer_bb_python.cc
+    fich_sink_b_python.cc
+    fr_vch_decoder_bb_python.cc
+    mbelib_block_bf_python.cc
+    pager_slicer_fb_python.cc
+    vd2_vch_decoder_bb_python.cc
+    python_bindings.cc)
 
 gr_pybind_make_oot(ysf ../../.. gr::ysf "${ysf_python_files}")
 
