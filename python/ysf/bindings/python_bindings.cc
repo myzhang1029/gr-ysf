@@ -21,6 +21,12 @@ namespace py = pybind11;
 // Please do not delete
 /**************************************/
 // BINDING_FUNCTION_PROTOTYPES(
+void bind_dch_sink_b(py::module &m);
+void bind_deframer_bb(py::module &m);
+void bind_fich_sink_b(py::module &m);
+void bind_fr_vch_decoder_bb(py::module &m);
+void bind_mbelib_block_bf(py::module &m);
+void bind_vd2_vch_decoder_bb(py::module &m);
 // ) END BINDING_FUNCTION_PROTOTYPES
 
 
@@ -49,5 +55,11 @@ PYBIND11_MODULE(ysf_python, m)
     // Please do not delete
     /**************************************/
     // BINDING_FUNCTION_CALLS(
+    bind_dch_sink_b(m);
+    bind_deframer_bb(m);
+    bind_fich_sink_b(m);
+    bind_fr_vch_decoder_bb(m);
+    bind_mbelib_block_bf(m);
+    bind_vd2_vch_decoder_bb(m);
     // ) END BINDING_FUNCTION_CALLS
 }
